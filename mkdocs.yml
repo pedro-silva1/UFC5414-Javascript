@@ -1,27 +1,62 @@
 site_name: Exercícios Javascript
+site_author: Pedro Silva
+
+# Repository
+repo_name: pedro-silva1/UFC5414-Javascript
+repo_url: https://github.com/pedro-silva1/UFC5414-Javascript
+
 theme:
   name: material
+  icon:
+    logo: simple/javascript
+  favicon: images/js.png
   features:
-    - navigation.tabs
-    - navigation.sections
     - toc.integrate
+    - toc.follow
     - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
-    - content.code.annotation
+    - content.code.annotate
     - content.code.copy
+    - navigation.tracking
   language: en
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-7
         name: Switch to dark mode
       primary: teal
       accent: purple
     - scheme: slate
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to light mode
       primary: teal
       accent: lime
+
+extra_javascript:
+  - javascripts/extra.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/pedro-silva1/UFC5414-Javascript
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - attr_list
+  - tables
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/pedro-silva1"  target="_blank" rel="noopener">Pedro Silva</a>
